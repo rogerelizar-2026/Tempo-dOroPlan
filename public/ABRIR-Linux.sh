@@ -1,6 +1,6 @@
 #!/bin/sh
 # PomoFoco — abridor para Linux
-cd "$(dirname "$0")" || exit 1
+cd "$(dirname "$0")/.." || exit 1
 PORT=4173
 echo ""
 echo "  PomoFoco — iniciando em http://localhost:$PORT"
