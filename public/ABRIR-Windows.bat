@@ -1,6 +1,6 @@
 @echo off
 title PomoFoco
-cd /d "%~dp0"
+cd /d "%~dp0.."
 echo.
 echo   PomoFoco - iniciando o app...
 echo.
