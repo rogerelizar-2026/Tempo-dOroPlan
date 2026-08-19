@@ -1,4 +1,22 @@
-(public/index.html)
-(public/ABRIR-Windows.bat)
+```
+# Build artifacts
+dist/
+build/
+*.js
+*.css
 
-The added and modified files are standard web project files (.html, .bat) which should not be ignored as they are part of the source code. No build artifacts, dependencies, or temporary files were detected in the changes that would warrant adding ignore rules.
+# Dependencies
+node_modules/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Editors
+.vscode/
+
+# Environment
+.env
+.env.local
+*.env.*
+```

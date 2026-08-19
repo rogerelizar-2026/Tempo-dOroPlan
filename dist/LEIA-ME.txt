@@ -7,29 +7,29 @@
 --------------------------------
 Você NÃO precisa instalar nem digitar nada.
 
-Este ambiente já tem o app pronto na pasta "dist".
-Siga os passos abaixo para abrir:
+Este ambiente já abriu o app automaticamente no navegador.
+Se a tela estiver em branco ou mostrar erro, siga os passos abaixo.
 
 
-2) COMO ABRIR O APP
--------------------
+2) SE O NAVEGADOR MOSTRAR ERRO OU TELA EM BRANCO
+-------------------------------------------------
 O servidor que mostra o app pode ter parado. Para religar:
 
   No Windows:
     1. Abra o Explorador de Arquivos
     2. Vá até a pasta onde este projeto está salvo
-    3. Dê dois cliques em: dist\ABRIR-Windows.bat
+    3. Dê dois cliques em: public\ABRIR-Windows.bat
 
   No Mac:
     1. Abra o Finder
     2. Vá até a pasta onde este projeto está salvo
-    3. Dê dois cliques em: dist/ABRIR-Mac.command
+    3. Dê dois cliques em: public/ABRIR-Mac.command
        (se o Mac bloquear, clique com botão direito > Abrir)
 
   No Linux:
     1. Abra o terminal
     2. Navegue até a pasta do projeto
-    3. Execute: ./dist/ABRIR-Linux.sh
+    3. Execute: ./public/ABRIR-Linux.sh
 
 O app vai abrir sozinho no endereço: http://localhost:4173
 
