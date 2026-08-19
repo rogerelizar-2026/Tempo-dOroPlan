@@ -1,0 +1,61 @@
+========================================================
+  PomoFoco - Timer Pomodoro e Planner Semanal
+  Como usar o aplicativo (passo a passo simples)
+========================================================
+
+OPCAO 1 - Se voce tem Node.js instalado (RECOMENDADO):
+---------------------------------------------------------
+1. Dê dois cliques no arquivo "INICIAR_POMOFOCO.bat"
+2. Uma janela preta vai aparecer (nao feche!)
+3. O navegador abrira automaticamente em http://localhost:4173
+4. Pronto! Use o app normalmente.
+
+Para fechar: Feche o navegador e depois pressione Ctrl+C na janela preta.
+
+
+OPCAO 2 - Se voce NAO tem Node.js (MAS TEM PYTHON):
+----------------------------------------------------
+1. Dê dois cliques no arquivo "INICIAR_SEM_NODEJS.bat"
+2. Uma janela preta vai aparecer (nao feche!)
+3. O navegador abrira automaticamente em http://localhost:8000
+4. Pronto! Use o app normalmente.
+
+
+OPCAO 3 - Se voce NAO tem Node.js NEM Python:
+----------------------------------------------
+SIMPLESMENTE ABRA O ARQUIVO "dist/index.html" NO SEU NAVEGADOR:
+1. Abra a pasta "dist"
+2. Dê dois cliques em "index.html"
+3. OU arraste o arquivo "index.html" para o Chrome, Edge ou Firefox
+4. O app vai funcionar diretamente!
+
+Nota: Alguns recursos podem ser limitados ao abrir direto o HTML,
+mas o timer, planner e estatísticas funcionam normalmente.
+
+
+INSTALAR NODE.JS (se quiser a experiencia completa):
+-----------------------------------------------------
+1. Acesse: https://nodejs.org/pt-br/
+2. Baixe a versao LTS (Recomendada para maioria dos usuarios)
+3. Instale com as opcoes padrao (next, next, install)
+4. Depois da instalacao, execute o "INICIAR_POMOFOCO.bat"
+
+
+DICAS IMPORTANTES:
+------------------
+- NUNCA feche a janela preta do terminal enquanto usa o app
+- Os dados ficam salvos apenas no seu navegador (privacidade total)
+- Funciona offline - pode usar sem internet
+- No celular: use "Adicionar a tela de inicio" no navegador
+
+
+SUPORTE:
+--------
+Se tiver problemas, tente:
+1. Limpar o cache do navegador (Ctrl+Shift+Delete)
+2. Usar outro navegador (Chrome, Edge, Firefox)
+3. Reiniciar o computador
+
+========================================================
+Aproveite o PomoFoco! Foque nas suas prioridades.
+========================================================
