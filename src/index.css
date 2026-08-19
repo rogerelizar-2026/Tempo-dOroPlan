@@ -1,0 +1,129 @@
+@import "@fontsource-variable/bricolage-grotesque";
+@import "@fontsource-variable/karla";
+@import "@fontsource-variable/spline-sans-mono";
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque Variable", "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Karla Variable", "Karla", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Spline Sans Mono Variable", "Spline Sans Mono", ui-monospace, "SF Mono", monospace;
+
+  --color-ink-950: #100e09;
+  --color-ink-900: #171410;
+  --color-ink-800: #201b13;
+  --color-ink-700: #2c261b;
+  --color-ink-600: #3b3324;
+  --color-ink-500: #4d4430;
+
+  --color-sand-100: #f6f0e1;
+  --color-sand-200: #e9e0cb;
+  --color-sand-300: #cfc4a9;
+  --color-sand-400: #a89c80;
+  --color-sand-500: #837a63;
+
+  --color-tomato-300: #ffa388;
+  --color-tomato-400: #ff7a55;
+  --color-tomato-500: #f4552f;
+  --color-tomato-600: #cf3f20;
+
+  --color-mint-300: #93e3bb;
+  --color-mint-400: #63d198;
+  --color-mint-500: #3fb87b;
+  --color-mint-600: #2e9462;
+
+  --color-cobalt-300: #aec6ff;
+  --color-cobalt-400: #86a8ff;
+  --color-cobalt-500: #6489f0;
+  --color-cobalt-600: #4c6cd4;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-ink-950);
+  color: var(--color-sand-100);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--acc, #f4552f) 40%, transparent);
+  color: var(--color-sand-100);
+}
+
+:focus-visible {
+  outline: 2px solid var(--acc, var(--color-tomato-500));
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* ---- textura de grão sobre tudo ---- */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  pointer-events: none;
+  opacity: 0.055;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---- animações ---- */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pop {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes breathe {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.07); }
+}
+@keyframes colon-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0.2; }
+}
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.anim-rise { animation: rise 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.anim-pop { animation: pop 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.anim-breathe { animation: breathe 4.5s ease-in-out infinite; }
+.anim-spin-slow { animation: spin-slow 80s linear infinite; }
+.anim-toast { animation: toast-in 0.35s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.colon-blink { animation: colon-blink 1s steps(1, end) infinite; }
+.anim-paused { animation-play-state: paused; }
+
+.delay-1 { animation-delay: 0.07s; }
+.delay-2 { animation-delay: 0.14s; }
+.delay-3 { animation-delay: 0.21s; }
+
+/* ---- entrada sem spinners nos inputs numéricos ---- */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* ---- barra de rolagem discreta ---- */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-ink-600) transparent;
+}
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-thumb { background: var(--color-ink-600); border-radius: 8px; }
+*::-webkit-scrollbar-track { background: transparent; }
