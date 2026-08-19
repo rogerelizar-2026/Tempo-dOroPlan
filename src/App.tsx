@@ -18,10 +18,11 @@ import { TimerView } from "./components/TimerView";
 import { StatsPanel } from "./components/StatsPanel";
 import { SettingsPanel } from "./components/SettingsPanel";
 import { PlannerView } from "./components/PlannerView";
+import { ManualView } from "./components/ManualView";
 import { ToastStack, type ToastItem } from "./components/ui";
-import { ListIcon, StopwatchIcon, TomatoIcon } from "./components/icons";
+import { BookIcon, ListIcon, StopwatchIcon, TomatoIcon } from "./components/icons";
 
-type Tab = "timer" | "planner";
+type Tab = "timer" | "planner" | "manual";
 
 export default function App() {
   const [settings, setSettings] = useStored<Settings>("settings", DEFAULT_SETTINGS);
@@ -111,6 +112,7 @@ export default function App() {
   const tabs: { id: Tab; label: string; icon: typeof StopwatchIcon }[] = [
     { id: "timer", label: "Timer", icon: StopwatchIcon },
     { id: "planner", label: "Planner", icon: ListIcon },
+    { id: "manual", label: "Manual", icon: BookIcon },
   ];
 
   return (
@@ -219,10 +221,12 @@ export default function App() {
                 />
               </div>
             </div>
-          ) : (
+          ) : tab === "planner" ? (
             <div key="planner" className="anim-rise">
               <PlannerView planner={planner} setPlanner={setPlanner} notify={notify} />
             </div>
+          ) : (
+            <ManualView key="manual" />
           )}
         </main>
 
