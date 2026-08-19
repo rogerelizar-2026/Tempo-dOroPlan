@@ -1,59 +1,36 @@
-============================================================
-  POMOFOCO - LEIA-ME (leva 1 minuto)
-============================================================
+====================================================
+  POMOFOCO — LEIA-ME (esta pasta É o app pronto)
+====================================================
 
-O QUE É
--------
-Um aplicativo de foco (técnica Pomodoro) com planner semanal.
-Ele funciona SEM internet e SEM precisar instalar nada.
+PARA ABRIR (não precisa instalar nada):
 
+  • Windows → dois cliques em  ABRIR-Windows.bat
+  • Mac     → dois cliques em  ABRIR-Mac.command
+              (se o sistema bloquear na primeira vez, clique com o
+              botão direito e escolha Abrir)
+  • Linux   → execute  ./ABRIR-Linux.sh
 
-COMO ABRIR
-----------
-1. Dê DOIS CLIQUES no arquivo "index.html"
-   (é o arquivo com o desenho do seu navegador).
-2. O app abre na tela e já pode ser usado.
+Vai aparecer uma janela de texto: é o "motorzinho" do app.
+NÃO FECHE essa janela enquanto estiver usando.
+O navegador abre sozinho em http://localhost:4173
+(se aparecer erro de conexão, aperte F5 uma vez)
 
-   Não abriu com dois cliques?
-   -> Clique com o botão direito em cima do "index.html",
-      escolha "Abrir com..." e selecione o seu navegador
-      (Chrome, Edge, Firefox...).
+Para parar: feche o navegador e a janela do motorzinho.
 
+POR QUE NÃO DOIS CLIQUES NO index.html?
+  Os navegadores modernos, por segurança, exigem um endereço
+  "http://" para rodar este tipo de app. Os arquivos ABRIR-*
+  criam esse endereço local automaticamente, só nesta máquina.
 
-AS TRÊS ABAS
-------------
-- TIMER   : cronômetro de foco e de pausas.
-            Dica: a tecla Espaço inicia e pausa.
-- PLANNER : liste pelo menos 7 prioridades da sua semana.
-- MANUAL  : guia completo de cada recurso,
-            escrito em linguagem simples, dentro do app.
+NO CELULAR:
+  Hospede esta pasta grátis no Netlify Drop
+  (https://app.netlify.com/drop — arraste a pasta, sem cadastro),
+  abra o link no celular e use "Adicionar à tela de início".
+  Depois da primeira visita, funciona até sem internet.
 
+SEUS DADOS:
+  Ficam salvos neste navegador (sem conta, sem nuvem).
+  Cada computador guarda os seus.
 
-ONDE FICAM SEUS DADOS
----------------------
-Tudo (ajustes, estatísticas, planner e o timer em andamento)
-fica salvo neste navegador, neste computador.
-Nada vai para a internet — é tudo privado.
-Atenção: se você limpar os dados do navegador, o app
-começa do zero.
-
-
-PARA LEVAR NO PENDRIVE
-----------------------
-Copie ESTA PASTA INTEIRA para o pendrive.
-Em outro computador, basta dar dois cliques no "index.html".
-(O histórico não viaja junto: cada computador guarda o seu.)
-
-
-PARA USAR NO CELULAR
---------------------
-Hospede esta pasta em um serviço gratuito (Netlify, por
-exemplo) e, no celular, use a opção "Adicionar à tela de
-início" do navegador. Depois da primeira visita, o app abre
-até sem sinal de internet.
-
-
-DÚVIDAS
--------
-Abra a aba MANUAL dentro do app: há um guia passo a passo de
-cada recurso e as respostas para as perguntas mais comuns.
+DÚVIDAS:
+  Dentro do app, aba "Manual".
