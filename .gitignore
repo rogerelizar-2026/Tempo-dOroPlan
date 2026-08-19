@@ -1,33 +1,22 @@
 ```
+# Build artifacts
+dist/
+build/
+*.js
+*.css
+
 # Dependencies
 node_modules/
 
-# Build artifacts
-dist/
-
-# Environment variables
+# Environment
 .env
 .env.local
-.env.*
+*.env.*
 
-# IDE and editor files
+# Editors
 .vscode/
-.idea/
-*.swp
-*.swo
+
+# Temp files
 *.tmp
-
-# Log files
 *.log
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Python specific
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
 ```
