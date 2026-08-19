@@ -1,0 +1,80 @@
+==============================================================
+  POMOFOCO — COMO USAR (explicado para quem não é programador)
+==============================================================
+
+1) PARA USAR O APP AGORA
+------------------------
+Você NÃO precisa instalar nem digitar nada.
+
+Neste ambiente, o app pronto é gerado e aberto automaticamente —
+é ele que aparece na tela. Basta usar:
+
+  • Aba TIMER   → cronômetro Pomodoro (foco, pausa curta, pausa longa)
+  • Aba PLANNER → suas 7 prioridades da semana
+  • Aba MANUAL  → guia completo de cada recurso, dentro do próprio app
+
+Na primeira vez, aparece uma tela de boas-vindas com 3 passos rápidos.
+
+
+2) O QUE SÃO OS ARQUIVOS QUE VOCÊ VÊ NA PASTA DO PROJETO
+--------------------------------------------------------
+• index.html (na raiz) e pasta src ..... são os "arquivos de fábrica"
+  (o código-fonte). Quem usa o app NÃO abre esses arquivos — eles só
+  funcionam dentro do ambiente de programação.
+
+• pasta public ......................... arquivos extras que vão junto
+  com o app pronto (instruções e abridores).
+
+• pasta dist ........................... é o APP PRONTO. Este ambiente
+  cria essa pasta sozinho, na hora de compilar. Por isso ela pode não
+  aparecer na listagem de arquivos — ela existe e é aberta
+  automaticamente para você.
+
+
+3) PARA LEVAR NO PENDRIVE E USAR EM QUALQUER COMPUTADOR
+-------------------------------------------------------
+Por segurança, os navegadores modernos não deixam esse tipo de app
+rodar com dois cliques direto no arquivo — eles exigem um endereço
+"http://". Para resolver isso SEM instalar nada, o app pronto já vem
+com "abridores" automáticos:
+
+  1. Copie a pasta "dist" inteira para o pendrive.
+  2. No outro computador, abra a pasta do pendrive e dê dois cliques:
+
+       ABRIR-Windows.bat   → no Windows
+       ABRIR-Mac.command   → no Mac (se o sistema bloquear na primeira
+                             vez, clique com o botão direito > Abrir)
+       ABRIR-Linux.sh      → no Linux
+
+  3. Aparece uma janela de texto — é o "motorzinho" do app.
+     NÃO FECHE essa janela enquanto estiver usando.
+     O navegador abre sozinho no endereço http://localhost:4173
+
+  4. Para parar de usar: feche o navegador e a janela do motorzinho.
+
+Se o navegador avisar que não conseguiu conectar, aperte F5 uma vez.
+O arquivo LEIA-ME.txt que vai junto na pasta repete essas instruções.
+
+
+4) PARA USAR NO CELULAR
+-----------------------
+• Suba a pasta "dist" em uma hospedagem gratuita (a mais fácil é o
+  Netlify Drop: https://app.netlify.com/drop — é só arrastar a pasta,
+  sem criar conta) e abra o link gerado no navegador do celular.
+• No navegador do celular, use "Adicionar à tela de início": o app
+  vira um ícone na tela e, depois da primeira visita, funciona até
+  sem internet.
+
+
+5) ONDE FICAM OS SEUS DADOS
+---------------------------
+Tempos personalizados, estatísticas e o planner ficam salvos no
+próprio navegador — sem conta, sem nuvem, sem internet.
+Cada computador/celular guarda os seus.
+
+
+6) DÚVIDAS
+----------
+Dentro do app, a aba "MANUAL" explica todos os recursos em detalhes:
+comandos, atalhos, estatísticas, planner, som, offline e perguntas
+frequentes.

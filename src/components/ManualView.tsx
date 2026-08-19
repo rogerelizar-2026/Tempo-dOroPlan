@@ -603,11 +603,15 @@ export function ManualView() {
                 (service worker). Daí em diante abre até em modo avião, instantaneamente.
               </li>
               <li>
-                <strong className="text-sand-200">No pendrive</strong> — copie a pasta do app para o pen drive e, em
-                qualquer computador, dê <strong className="text-sand-200">dois cliques no arquivo{" "}
-                <span className="font-mono text-sand-300">index.html</span></strong>. Não precisa instalar nada — o
-                arquivo <span className="font-mono text-sand-300">LEIA-ME.txt</span> que vai junto na pasta explica
-                tudo em linguagem simples.
+                <strong className="text-sand-200">No pendrive</strong> — copie a pasta do app pronto (a pasta{" "}
+                <span className="font-mono text-sand-300">dist</span>) para o pen drive. Em qualquer computador, dê
+                dois cliques no abridor do sistema —{" "}
+                <span className="font-mono text-sand-300">ABRIR-Windows.bat</span>,{" "}
+                <span className="font-mono text-sand-300">ABRIR-Mac.command</span> ou{" "}
+                <span className="font-mono text-sand-300">ABRIR-Linux.sh</span>. Uma janela de texto aparece (é o
+                motorzinho do app — deixe aberta enquanto usa) e o navegador abre sozinho. Não instala nada; o
+                arquivo <span className="font-mono text-sand-300">LEIA-ME.txt</span> que vai junto repete as
+                instruções.
               </li>
               <li>
                 <strong className="text-sand-200">No celular</strong> — use a opção{" "}
