@@ -164,6 +164,13 @@ export const SparkIcon = (p: P) => (
   </svg>
 );
 
+export const BookIcon = (p: P) => (
+  <svg {...base(p)}>
+    <path d="M2.5 4.5h6a4 4 0 0 1 4 4v11.5a3 3 0 0 0-3-3h-7V4.5z" />
+    <path d="M21.5 4.5h-6a4 4 0 0 0-4 4v11.5a3 3 0 0 1 3-3h7V4.5z" />
+  </svg>
+);
+
 export const OfflineIcon = (p: P) => (
   <svg {...base(p)}>
     <circle cx="12" cy="12" r="8.5" />
