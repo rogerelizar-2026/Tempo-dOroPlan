@@ -1,6 +1,6 @@
 #!/bin/sh
 # PomoFoco — abridor para macOS (dois cliques para usar)
-cd "$(dirname "$0")" || exit 1
+cd "$(dirname "$0")/.." || exit 1
 PORT=4173
 clear
 echo ""
