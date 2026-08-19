@@ -1,0 +1,59 @@
+============================================================
+  POMOFOCO - LEIA-ME (leva 1 minuto)
+============================================================
+
+O QUE É
+-------
+Um aplicativo de foco (técnica Pomodoro) com planner semanal.
+Ele funciona SEM internet e SEM precisar instalar nada.
+
+
+COMO ABRIR
+----------
+1. Dê DOIS CLIQUES no arquivo "index.html"
+   (é o arquivo com o desenho do seu navegador).
+2. O app abre na tela e já pode ser usado.
+
+   Não abriu com dois cliques?
+   -> Clique com o botão direito em cima do "index.html",
+      escolha "Abrir com..." e selecione o seu navegador
+      (Chrome, Edge, Firefox...).
+
+
+AS TRÊS ABAS
+------------
+- TIMER   : cronômetro de foco e de pausas.
+            Dica: a tecla Espaço inicia e pausa.
+- PLANNER : liste pelo menos 7 prioridades da sua semana.
+- MANUAL  : guia completo de cada recurso,
+            escrito em linguagem simples, dentro do app.
+
+
+ONDE FICAM SEUS DADOS
+---------------------
+Tudo (ajustes, estatísticas, planner e o timer em andamento)
+fica salvo neste navegador, neste computador.
+Nada vai para a internet — é tudo privado.
+Atenção: se você limpar os dados do navegador, o app
+começa do zero.
+
+
+PARA LEVAR NO PENDRIVE
+----------------------
+Copie ESTA PASTA INTEIRA para o pendrive.
+Em outro computador, basta dar dois cliques no "index.html".
+(O histórico não viaja junto: cada computador guarda o seu.)
+
+
+PARA USAR NO CELULAR
+--------------------
+Hospede esta pasta em um serviço gratuito (Netlify, por
+exemplo) e, no celular, use a opção "Adicionar à tela de
+início" do navegador. Depois da primeira visita, o app abre
+até sem sinal de internet.
+
+
+DÚVIDAS
+-------
+Abra a aba MANUAL dentro do app: há um guia passo a passo de
+cada recurso e as respostas para as perguntas mais comuns.
