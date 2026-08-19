@@ -325,6 +325,10 @@ export function ManualView() {
               </li>
             </ul>
             <Callout title="Primeiros passos">
+              <p className="mb-1.5">
+                Na primeira vez que você abre o app, uma tela de boas-vindas resume estes mesmos
+                passos — depois ela nunca mais aparece.
+              </p>
               <ol className="list-decimal space-y-1 pl-4">
                 <li>Abra “Durações & ajustes” no Timer e defina seus tempos e a meta diária.</li>
                 <li>No Planner, registre pelo menos 7 prioridades para a semana.</li>
@@ -599,9 +603,11 @@ export function ManualView() {
                 (service worker). Daí em diante abre até em modo avião, instantaneamente.
               </li>
               <li>
-                <strong className="text-sand-200">No pendrive</strong> — copie a pasta <span className="font-mono text-sand-300">dist</span>{" "}
-                para o pen drive e abra o <span className="font-mono text-sand-300">index.html</span> em qualquer
-                computador. Funciona pelo protocolo de arquivo, sem servidor.
+                <strong className="text-sand-200">No pendrive</strong> — copie a pasta do app para o pen drive e, em
+                qualquer computador, dê <strong className="text-sand-200">dois cliques no arquivo{" "}
+                <span className="font-mono text-sand-300">index.html</span></strong>. Não precisa instalar nada — o
+                arquivo <span className="font-mono text-sand-300">LEIA-ME.txt</span> que vai junto na pasta explica
+                tudo em linguagem simples.
               </li>
               <li>
                 <strong className="text-sand-200">No celular</strong> — use a opção{" "}

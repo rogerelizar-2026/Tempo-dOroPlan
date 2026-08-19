@@ -19,6 +19,7 @@ import { StatsPanel } from "./components/StatsPanel";
 import { SettingsPanel } from "./components/SettingsPanel";
 import { PlannerView } from "./components/PlannerView";
 import { ManualView } from "./components/ManualView";
+import { Onboarding } from "./components/Onboarding";
 import { ToastStack, type ToastItem } from "./components/ui";
 import { BookIcon, ListIcon, StopwatchIcon, TomatoIcon } from "./components/icons";
 
@@ -31,6 +32,7 @@ export default function App() {
   const [tab, setTab] = useState<Tab>("timer");
   const [toasts, setToasts] = useState<ToastItem[]>([]);
   const toastId = useRef(0);
+  const [seen, setSeen] = useStored<boolean>("seen", false);
 
   const notify = useCallback((text: string, color = "#a89c80") => {
     const id = ++toastId.current;
@@ -245,6 +247,17 @@ export default function App() {
           </div>
         </footer>
       </div>
+
+      {!seen && (
+        <Onboarding
+          onDismiss={() => setSeen(true)}
+          onManual={() => {
+            setSeen(true);
+            setTab("manual");
+            window.scrollTo({ top: 0 });
+          }}
+        />
+      )}
 
       <ToastStack toasts={toasts} onDismiss={(id) => setToasts((t) => t.filter((x) => x.id !== id))} />
     </div>

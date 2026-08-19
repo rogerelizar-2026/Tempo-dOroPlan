@@ -2,7 +2,7 @@ import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 import { load, save } from "../lib/core";
 
 /** Estado React espelhado em localStorage (sobrevive a recargas e funciona offline) */
-export function useStored<T extends object>(
+export function useStored<T>(
   key: string,
   initial: T
 ): [T, Dispatch<SetStateAction<T>>] {
