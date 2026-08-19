@@ -1,0 +1,70 @@
+
+==============================================================
+  POMOFOCO — COMO ABRIR O APP PRONTO (sem instalar nada)
+==============================================================
+
+1) PARA USAR AGORA NO COMPUTADOR
+--------------------------------
+Você NÃO precisa instalar nem digitar nada.
+
+Este ambiente já tem o app pronto na pasta "dist".
+Siga os passos abaixo para abrir:
+
+
+2) COMO ABRIR O APP
+-------------------
+O servidor que mostra o app pode ter parado. Para religar:
+
+  No Windows:
+    1. Abra o Explorador de Arquivos
+    2. Vá até a pasta onde este projeto está salvo
+    3. Dê dois cliques em: dist\ABRIR-Windows.bat
+
+  No Mac:
+    1. Abra o Finder
+    2. Vá até a pasta onde este projeto está salvo
+    3. Dê dois cliques em: dist/ABRIR-Mac.command
+       (se o Mac bloquear, clique com botão direito > Abrir)
+
+  No Linux:
+    1. Abra o terminal
+    2. Navegue até a pasta do projeto
+    3. Execute: ./dist/ABRIR-Linux.sh
+
+O app vai abrir sozinho no endereço: http://localhost:4173
+
+IMPORTANTE: Uma janela preta (terminal) vai ficar aberta — 
+NÃO FECHE essa janela enquanto usa o app. Ela é o "motorzinho"
+que mantém o app funcionando.
+
+
+3) PARA LEVAR NO PENDRIVE E USAR EM QUALQUER COMPUTADOR
+-------------------------------------------------------
+  1. Copie TODA esta pasta do projeto para o pendrive.
+  2. No outro computador, abra a pasta e dê dois cliques no
+     abridor do seu sistema (veja passo 2).
+  3. O navegador abre sozinho. Se não abrir, digite na barra
+     de endereços: http://localhost:4173
+
+
+4) PARA USAR NO CELULAR
+-----------------------
+  1. Acesse https://app.netlify.com/drop no navegador do PC
+  2. Arraste a pasta inteira do projeto para lá (não precisa
+     criar conta)
+  3. O Netlify gera um link — abra esse link no celular
+  4. No navegador do celular, use "Adicionar à tela de início"
+     para criar um ícone do app
+
+
+5) ONDE FICAM MEUS DADOS?
+-------------------------
+Tudo fica salvo no seu navegador — sem conta, sem nuvem.
+Cada dispositivo tem seus próprios dados.
+
+
+6) PRECISA DE AJUDA?
+--------------------
+Dentro do próprio app, clique na aba "MANUAL" para ver
+instruções completas de todos os recursos.
+
